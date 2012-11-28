@@ -1178,8 +1178,6 @@ status_t Camera2Client::sendCommand(int32_t cmd, int32_t arg1, int32_t arg2) {
             return commandEnableFocusMoveMsgL(arg1 == 1);
         case CAMERA_CMD_PING:
             return commandPingL();
-        case CAMERA_CMD_SET_VIDEO_BUFFER_COUNT:
-            return commandSetVideoBufferCountL(arg1);
         default:
             ALOGE("%s: Unknown command %d (arguments %d, %d)",
                     __FUNCTION__, cmd, arg1, arg2);
